@@ -147,7 +147,7 @@ static void init() {
 
   count = 0;
 
-  app_message_open(inbox_size, outbox_size);
+  app_message_open(32, 32);
   // Register to be notified about inbox received events
   app_message_register_inbox_received(inbox_received_callback);
   // Register to be notified about inbox dropped events
