@@ -14,11 +14,16 @@ let π:CGFloat = CGFloat(M_PI)
 @IBDesignable class CounterView: UIView {
 
     @IBInspectable var counter: Int = 5
+
         {
+
         didSet {
             if counter <=  NoOfGlasses {
                 //the view needs to be refreshed
                 setNeedsDisplay()
+            }
+            if counter < 0 {
+                counter = 0
             }
         }
     }

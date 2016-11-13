@@ -10,6 +10,7 @@
 		82E25A4121EE3788DF1AC628 /* Pods_SoylentTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47ED649A2F2330FF33841C0D /* Pods_SoylentTracker.framework */; };
 		9A6E74FFB523978A42AAB3BC /* Pods_SoylentTrackerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F573A735F8C4B181A5A027C8 /* Pods_SoylentTrackerTests.framework */; };
 		B88BCFF514DADE313D59F11D /* Pods_SoylentTrackerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26CEF13047E241897BB203AB /* Pods_SoylentTrackerUITests.framework */; };
+		BD0400331DD84A550033E23E /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD0400321DD84A550033E23E /* ExternalAccessory.framework */; };
 		BDA5EAA81DD7DC9F002FFD16 /* soylentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA5EAA71DD7DC9F002FFD16 /* soylentData.swift */; };
 		BDA5EAAC1DD81C4F002FFD16 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA5EAAB1DD81C4F002FFD16 /* Utils.swift */; };
 		BDAA8A3D1DD7BAA20085E98F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAA8A3C1DD7BAA20085E98F /* AppDelegate.swift */; };
@@ -45,6 +46,8 @@
 		47ED649A2F2330FF33841C0D /* Pods_SoylentTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SoylentTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CEC1AA0B07E10BFC53B4C0C /* Pods-SoylentTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoylentTracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SoylentTracker/Pods-SoylentTracker.debug.xcconfig"; sourceTree = "<group>"; };
 		8FDDBDF9D5DA21436163E88E /* Pods-SoylentTrackerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoylentTrackerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SoylentTrackerUITests/Pods-SoylentTrackerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BD0400321DD84A550033E23E /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		BD0400341DD84A550033E23E /* SoylentTracker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SoylentTracker.entitlements; sourceTree = "<group>"; };
 		BDA5EAA71DD7DC9F002FFD16 /* soylentData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = soylentData.swift; sourceTree = "<group>"; };
 		BDA5EAAB1DD81C4F002FFD16 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		BDAA8A391DD7BAA20085E98F /* SoylentTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoylentTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD0400331DD84A550033E23E /* ExternalAccessory.framework in Frameworks */,
 				82E25A4121EE3788DF1AC628 /* Pods_SoylentTracker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -98,6 +102,7 @@
 		939C33DCEA228211E41ADF8E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BD0400321DD84A550033E23E /* ExternalAccessory.framework */,
 				47ED649A2F2330FF33841C0D /* Pods_SoylentTracker.framework */,
 				F573A735F8C4B181A5A027C8 /* Pods_SoylentTrackerTests.framework */,
 				26CEF13047E241897BB203AB /* Pods_SoylentTrackerUITests.framework */,
@@ -143,6 +148,7 @@
 		BDAA8A3B1DD7BAA20085E98F /* SoylentTracker */ = {
 			isa = PBXGroup;
 			children = (
+				BD0400341DD84A550033E23E /* SoylentTracker.entitlements */,
 				BDAA8A3C1DD7BAA20085E98F /* AppDelegate.swift */,
 				BDAA8A3E1DD7BAA20085E98F /* DailyViewController.swift */,
 				BDAA8A401DD7BAA20085E98F /* Main.storyboard */,
@@ -253,6 +259,11 @@
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = UD49P337VQ;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.WAC = {
+								enabled = 1;
+							};
+						};
 					};
 					BDAA8A4C1DD7BAA20085E98F = {
 						CreatedOnToolsVersion = 8.1;
@@ -617,6 +628,7 @@
 			baseConfigurationReference = 7CEC1AA0B07E10BFC53B4C0C /* Pods-SoylentTracker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SoylentTracker/SoylentTracker.entitlements;
 				DEVELOPMENT_TEAM = UD49P337VQ;
 				INFOPLIST_FILE = SoylentTracker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -633,6 +645,7 @@
 			baseConfigurationReference = D9141E53E0498AF7265708E7 /* Pods-SoylentTracker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SoylentTracker/SoylentTracker.entitlements;
 				DEVELOPMENT_TEAM = UD49P337VQ;
 				INFOPLIST_FILE = SoylentTracker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

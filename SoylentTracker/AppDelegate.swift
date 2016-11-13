@@ -13,21 +13,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     var dailyView: DailyViewController?
-    var watch: PBWatch? {
-        didSet {
-            if let watch = watch {
-                watch.appMessagesLaunch({ (_, error) in
-                    if error != nil {
-                        print("App launched!")
-                    }
-                })
-            }
-        }
-    }
+
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-
-        
+        let pebble = PBPebbleCentral.default()
+        let uuid = UUID(uuidString: "23F1BA9D-FD45-47DB-8370-001983A2BDE2")
+        pebble.appUUID = uuid
         return true
     }
 
@@ -59,4 +50,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 }
+
 

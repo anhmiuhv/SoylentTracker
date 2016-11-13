@@ -1,20 +1,20 @@
-# project  configured on Sun Nov 13 00:31:51 2016 by
-# waf 1.7.11 (abi 98, python 2070cf0 on linux2)
-# using /home/selph/.pebble-sdk/SDKs/current/sdk-core/pebble/waf configure
+# project  configured on Sun Nov 13 08:54:25 2016 by
+# waf 1.7.11 (abi 98, python 2070af0 on darwin)
+# using /Users/linh/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/waf configure
 #
 ----------------------------------------
 Setting top to
-/home/selph/code/pebble/watchface
+/Users/linh/Documents/SoylentTracker/watchface
 ----------------------------------------
 Setting out to
-/home/selph/code/pebble/watchface/build
+/Users/linh/Documents/SoylentTracker/watchface/build
 ----------------------------------------
 Checking for program webpack
-/home/selph/.pebble-sdk/SDKs/current/node_modules/.bin/webpack
-find program=['webpack'] paths=['/home/selph/.pebble-sdk/SDKs/current/node_modules/.bin'] var='WEBPACK' -> '/home/selph/.pebble-sdk/SDKs/current/node_modules/.bin/webpack'
+/Users/linh/Library/Application Support/Pebble SDK/SDKs/current/node_modules/.bin/webpack
+find program=['webpack'] paths=['/Users/linh/Library/Application Support/Pebble SDK/SDKs/current/node_modules/.bin'] var='WEBPACK' -> '/Users/linh/Library/Application Support/Pebble SDK/SDKs/current/node_modules/.bin/webpack'
 ----------------------------------------
 Found Pebble SDK for diorite in:
-/home/selph/.pebble-sdk/SDKs/current/sdk-core/pebble/diorite
+/Users/linh/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/diorite
 ----------------------------------------
 Checking for program gcc,cc
 arm-none-eabi-gcc
@@ -25,7 +25,7 @@ arm-none-eabi-ar
 find program=['ar'] paths='' var='AR' -> 'arm-none-eabi-ar'
 ----------------------------------------
 Found Pebble SDK for chalk in:
-/home/selph/.pebble-sdk/SDKs/current/sdk-core/pebble/chalk
+/Users/linh/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk
 ----------------------------------------
 Checking for program gcc,cc
 arm-none-eabi-gcc
@@ -36,7 +36,7 @@ arm-none-eabi-ar
 find program=['ar'] paths='' var='AR' -> 'arm-none-eabi-ar'
 ----------------------------------------
 Found Pebble SDK for basalt in:
-/home/selph/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt
+/Users/linh/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/basalt
 ----------------------------------------
 Checking for program gcc,cc
 arm-none-eabi-gcc
@@ -47,7 +47,7 @@ arm-none-eabi-ar
 find program=['ar'] paths='' var='AR' -> 'arm-none-eabi-ar'
 ----------------------------------------
 Found Pebble SDK for aplite in:
-/home/selph/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite
+/Users/linh/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite
 ----------------------------------------
 Checking for program gcc,cc
 arm-none-eabi-gcc
