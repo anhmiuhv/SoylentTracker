@@ -1,0 +1,751 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		82E25A4121EE3788DF1AC628 /* Pods_SoylentTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47ED649A2F2330FF33841C0D /* Pods_SoylentTracker.framework */; };
+		9A6E74FFB523978A42AAB3BC /* Pods_SoylentTrackerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F573A735F8C4B181A5A027C8 /* Pods_SoylentTrackerTests.framework */; };
+		B88BCFF514DADE313D59F11D /* Pods_SoylentTrackerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26CEF13047E241897BB203AB /* Pods_SoylentTrackerUITests.framework */; };
+		BDA5EAA81DD7DC9F002FFD16 /* soylentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA5EAA71DD7DC9F002FFD16 /* soylentData.swift */; };
+		BDA5EAAC1DD81C4F002FFD16 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA5EAAB1DD81C4F002FFD16 /* Utils.swift */; };
+		BDAA8A3D1DD7BAA20085E98F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAA8A3C1DD7BAA20085E98F /* AppDelegate.swift */; };
+		BDAA8A3F1DD7BAA20085E98F /* DailyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAA8A3E1DD7BAA20085E98F /* DailyViewController.swift */; };
+		BDAA8A421DD7BAA20085E98F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDAA8A401DD7BAA20085E98F /* Main.storyboard */; };
+		BDAA8A441DD7BAA20085E98F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDAA8A431DD7BAA20085E98F /* Assets.xcassets */; };
+		BDAA8A471DD7BAA20085E98F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDAA8A451DD7BAA20085E98F /* LaunchScreen.storyboard */; };
+		BDAA8A521DD7BAA20085E98F /* SoylentTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAA8A511DD7BAA20085E98F /* SoylentTrackerTests.swift */; };
+		BDAA8A5D1DD7BAA20085E98F /* SoylentTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAA8A5C1DD7BAA20085E98F /* SoylentTrackerUITests.swift */; };
+		BDAA8A6B1DD7BBA00085E98F /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAA8A6A1DD7BBA00085E98F /* CounterView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BDAA8A4E1DD7BAA20085E98F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BDAA8A311DD7BAA20085E98F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BDAA8A381DD7BAA20085E98F;
+			remoteInfo = SoylentTracker;
+		};
+		BDAA8A591DD7BAA20085E98F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BDAA8A311DD7BAA20085E98F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BDAA8A381DD7BAA20085E98F;
+			remoteInfo = SoylentTracker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		26CEF13047E241897BB203AB /* Pods_SoylentTrackerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SoylentTrackerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		40D8F35B2084729FA6796C57 /* Pods-SoylentTrackerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoylentTrackerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SoylentTrackerTests/Pods-SoylentTrackerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		47ED649A2F2330FF33841C0D /* Pods_SoylentTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SoylentTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CEC1AA0B07E10BFC53B4C0C /* Pods-SoylentTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoylentTracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SoylentTracker/Pods-SoylentTracker.debug.xcconfig"; sourceTree = "<group>"; };
+		8FDDBDF9D5DA21436163E88E /* Pods-SoylentTrackerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoylentTrackerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SoylentTrackerUITests/Pods-SoylentTrackerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BDA5EAA71DD7DC9F002FFD16 /* soylentData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = soylentData.swift; sourceTree = "<group>"; };
+		BDA5EAAB1DD81C4F002FFD16 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		BDAA8A391DD7BAA20085E98F /* SoylentTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoylentTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDAA8A3C1DD7BAA20085E98F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BDAA8A3E1DD7BAA20085E98F /* DailyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyViewController.swift; sourceTree = "<group>"; };
+		BDAA8A411DD7BAA20085E98F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BDAA8A431DD7BAA20085E98F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BDAA8A461DD7BAA20085E98F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BDAA8A481DD7BAA20085E98F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDAA8A4D1DD7BAA20085E98F /* SoylentTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoylentTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDAA8A511DD7BAA20085E98F /* SoylentTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoylentTrackerTests.swift; sourceTree = "<group>"; };
+		BDAA8A531DD7BAA20085E98F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDAA8A581DD7BAA20085E98F /* SoylentTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoylentTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDAA8A5C1DD7BAA20085E98F /* SoylentTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoylentTrackerUITests.swift; sourceTree = "<group>"; };
+		BDAA8A5E1DD7BAA20085E98F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDAA8A6A1DD7BBA00085E98F /* CounterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
+		D33A65B499CD14CB900E9912 /* Pods-SoylentTrackerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoylentTrackerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SoylentTrackerTests/Pods-SoylentTrackerTests.release.xcconfig"; sourceTree = "<group>"; };
+		D9141E53E0498AF7265708E7 /* Pods-SoylentTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoylentTracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-SoylentTracker/Pods-SoylentTracker.release.xcconfig"; sourceTree = "<group>"; };
+		F573A735F8C4B181A5A027C8 /* Pods_SoylentTrackerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SoylentTrackerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEC9EB2849D76BC70443978D /* Pods-SoylentTrackerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoylentTrackerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SoylentTrackerUITests/Pods-SoylentTrackerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BDAA8A361DD7BAA20085E98F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82E25A4121EE3788DF1AC628 /* Pods_SoylentTracker.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDAA8A4A1DD7BAA20085E98F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A6E74FFB523978A42AAB3BC /* Pods_SoylentTrackerTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDAA8A551DD7BAA20085E98F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B88BCFF514DADE313D59F11D /* Pods_SoylentTrackerUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		939C33DCEA228211E41ADF8E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				47ED649A2F2330FF33841C0D /* Pods_SoylentTracker.framework */,
+				F573A735F8C4B181A5A027C8 /* Pods_SoylentTrackerTests.framework */,
+				26CEF13047E241897BB203AB /* Pods_SoylentTrackerUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BD44927723ED96C30ED75402 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7CEC1AA0B07E10BFC53B4C0C /* Pods-SoylentTracker.debug.xcconfig */,
+				D9141E53E0498AF7265708E7 /* Pods-SoylentTracker.release.xcconfig */,
+				40D8F35B2084729FA6796C57 /* Pods-SoylentTrackerTests.debug.xcconfig */,
+				D33A65B499CD14CB900E9912 /* Pods-SoylentTrackerTests.release.xcconfig */,
+				FEC9EB2849D76BC70443978D /* Pods-SoylentTrackerUITests.debug.xcconfig */,
+				8FDDBDF9D5DA21436163E88E /* Pods-SoylentTrackerUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BDAA8A301DD7BAA20085E98F = {
+			isa = PBXGroup;
+			children = (
+				BDAA8A3B1DD7BAA20085E98F /* SoylentTracker */,
+				BDAA8A501DD7BAA20085E98F /* SoylentTrackerTests */,
+				BDAA8A5B1DD7BAA20085E98F /* SoylentTrackerUITests */,
+				BDAA8A3A1DD7BAA20085E98F /* Products */,
+				BD44927723ED96C30ED75402 /* Pods */,
+				939C33DCEA228211E41ADF8E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BDAA8A3A1DD7BAA20085E98F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BDAA8A391DD7BAA20085E98F /* SoylentTracker.app */,
+				BDAA8A4D1DD7BAA20085E98F /* SoylentTrackerTests.xctest */,
+				BDAA8A581DD7BAA20085E98F /* SoylentTrackerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BDAA8A3B1DD7BAA20085E98F /* SoylentTracker */ = {
+			isa = PBXGroup;
+			children = (
+				BDAA8A3C1DD7BAA20085E98F /* AppDelegate.swift */,
+				BDAA8A3E1DD7BAA20085E98F /* DailyViewController.swift */,
+				BDAA8A401DD7BAA20085E98F /* Main.storyboard */,
+				BDAA8A431DD7BAA20085E98F /* Assets.xcassets */,
+				BDAA8A451DD7BAA20085E98F /* LaunchScreen.storyboard */,
+				BDAA8A481DD7BAA20085E98F /* Info.plist */,
+				BDAA8A6A1DD7BBA00085E98F /* CounterView.swift */,
+				BDA5EAA71DD7DC9F002FFD16 /* soylentData.swift */,
+				BDA5EAAB1DD81C4F002FFD16 /* Utils.swift */,
+			);
+			path = SoylentTracker;
+			sourceTree = "<group>";
+		};
+		BDAA8A501DD7BAA20085E98F /* SoylentTrackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				BDAA8A511DD7BAA20085E98F /* SoylentTrackerTests.swift */,
+				BDAA8A531DD7BAA20085E98F /* Info.plist */,
+			);
+			path = SoylentTrackerTests;
+			sourceTree = "<group>";
+		};
+		BDAA8A5B1DD7BAA20085E98F /* SoylentTrackerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BDAA8A5C1DD7BAA20085E98F /* SoylentTrackerUITests.swift */,
+				BDAA8A5E1DD7BAA20085E98F /* Info.plist */,
+			);
+			path = SoylentTrackerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BDAA8A381DD7BAA20085E98F /* SoylentTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDAA8A611DD7BAA20085E98F /* Build configuration list for PBXNativeTarget "SoylentTracker" */;
+			buildPhases = (
+				730A38DA26A10FE8516FF9C5 /* [CP] Check Pods Manifest.lock */,
+				BDAA8A351DD7BAA20085E98F /* Sources */,
+				BDAA8A361DD7BAA20085E98F /* Frameworks */,
+				BDAA8A371DD7BAA20085E98F /* Resources */,
+				FA6031D31EDCAD93B06EA1B9 /* [CP] Embed Pods Frameworks */,
+				8DF377F91184B84BF36FDFF3 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SoylentTracker;
+			productName = SoylentTracker;
+			productReference = BDAA8A391DD7BAA20085E98F /* SoylentTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BDAA8A4C1DD7BAA20085E98F /* SoylentTrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDAA8A641DD7BAA20085E98F /* Build configuration list for PBXNativeTarget "SoylentTrackerTests" */;
+			buildPhases = (
+				340CC1769110E8A564F49572 /* [CP] Check Pods Manifest.lock */,
+				BDAA8A491DD7BAA20085E98F /* Sources */,
+				BDAA8A4A1DD7BAA20085E98F /* Frameworks */,
+				BDAA8A4B1DD7BAA20085E98F /* Resources */,
+				BAD8D2B9B7EE559FE3CEB79A /* [CP] Embed Pods Frameworks */,
+				DFB3F2CD0D00C35D0E8C41C5 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BDAA8A4F1DD7BAA20085E98F /* PBXTargetDependency */,
+			);
+			name = SoylentTrackerTests;
+			productName = SoylentTrackerTests;
+			productReference = BDAA8A4D1DD7BAA20085E98F /* SoylentTrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BDAA8A571DD7BAA20085E98F /* SoylentTrackerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDAA8A671DD7BAA20085E98F /* Build configuration list for PBXNativeTarget "SoylentTrackerUITests" */;
+			buildPhases = (
+				E9D1FE77F8F6143BD41BF006 /* [CP] Check Pods Manifest.lock */,
+				BDAA8A541DD7BAA20085E98F /* Sources */,
+				BDAA8A551DD7BAA20085E98F /* Frameworks */,
+				BDAA8A561DD7BAA20085E98F /* Resources */,
+				AAE06EB9D2DFCCD469F05141 /* [CP] Embed Pods Frameworks */,
+				DEF008106332C4DE07153436 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BDAA8A5A1DD7BAA20085E98F /* PBXTargetDependency */,
+			);
+			name = SoylentTrackerUITests;
+			productName = SoylentTrackerUITests;
+			productReference = BDAA8A581DD7BAA20085E98F /* SoylentTrackerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BDAA8A311DD7BAA20085E98F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Linh Hoang";
+				TargetAttributes = {
+					BDAA8A381DD7BAA20085E98F = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = UD49P337VQ;
+						ProvisioningStyle = Automatic;
+					};
+					BDAA8A4C1DD7BAA20085E98F = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = UD49P337VQ;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BDAA8A381DD7BAA20085E98F;
+					};
+					BDAA8A571DD7BAA20085E98F = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = UD49P337VQ;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BDAA8A381DD7BAA20085E98F;
+					};
+				};
+			};
+			buildConfigurationList = BDAA8A341DD7BAA20085E98F /* Build configuration list for PBXProject "SoylentTracker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BDAA8A301DD7BAA20085E98F;
+			productRefGroup = BDAA8A3A1DD7BAA20085E98F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BDAA8A381DD7BAA20085E98F /* SoylentTracker */,
+				BDAA8A4C1DD7BAA20085E98F /* SoylentTrackerTests */,
+				BDAA8A571DD7BAA20085E98F /* SoylentTrackerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BDAA8A371DD7BAA20085E98F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDAA8A471DD7BAA20085E98F /* LaunchScreen.storyboard in Resources */,
+				BDAA8A441DD7BAA20085E98F /* Assets.xcassets in Resources */,
+				BDAA8A421DD7BAA20085E98F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDAA8A4B1DD7BAA20085E98F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDAA8A561DD7BAA20085E98F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		340CC1769110E8A564F49572 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		730A38DA26A10FE8516FF9C5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8DF377F91184B84BF36FDFF3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SoylentTracker/Pods-SoylentTracker-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AAE06EB9D2DFCCD469F05141 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SoylentTrackerUITests/Pods-SoylentTrackerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BAD8D2B9B7EE559FE3CEB79A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SoylentTrackerTests/Pods-SoylentTrackerTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DEF008106332C4DE07153436 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SoylentTrackerUITests/Pods-SoylentTrackerUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DFB3F2CD0D00C35D0E8C41C5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SoylentTrackerTests/Pods-SoylentTrackerTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9D1FE77F8F6143BD41BF006 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FA6031D31EDCAD93B06EA1B9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SoylentTracker/Pods-SoylentTracker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BDAA8A351DD7BAA20085E98F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDA5EAAC1DD81C4F002FFD16 /* Utils.swift in Sources */,
+				BDA5EAA81DD7DC9F002FFD16 /* soylentData.swift in Sources */,
+				BDAA8A3F1DD7BAA20085E98F /* DailyViewController.swift in Sources */,
+				BDAA8A3D1DD7BAA20085E98F /* AppDelegate.swift in Sources */,
+				BDAA8A6B1DD7BBA00085E98F /* CounterView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDAA8A491DD7BAA20085E98F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDAA8A521DD7BAA20085E98F /* SoylentTrackerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDAA8A541DD7BAA20085E98F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDAA8A5D1DD7BAA20085E98F /* SoylentTrackerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BDAA8A4F1DD7BAA20085E98F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BDAA8A381DD7BAA20085E98F /* SoylentTracker */;
+			targetProxy = BDAA8A4E1DD7BAA20085E98F /* PBXContainerItemProxy */;
+		};
+		BDAA8A5A1DD7BAA20085E98F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BDAA8A381DD7BAA20085E98F /* SoylentTracker */;
+			targetProxy = BDAA8A591DD7BAA20085E98F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BDAA8A401DD7BAA20085E98F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BDAA8A411DD7BAA20085E98F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BDAA8A451DD7BAA20085E98F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BDAA8A461DD7BAA20085E98F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BDAA8A5F1DD7BAA20085E98F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BDAA8A601DD7BAA20085E98F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BDAA8A621DD7BAA20085E98F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CEC1AA0B07E10BFC53B4C0C /* Pods-SoylentTracker.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UD49P337VQ;
+				INFOPLIST_FILE = SoylentTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lthoang.wpi.com.SoylentTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		BDAA8A631DD7BAA20085E98F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9141E53E0498AF7265708E7 /* Pods-SoylentTracker.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UD49P337VQ;
+				INFOPLIST_FILE = SoylentTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lthoang.wpi.com.SoylentTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		BDAA8A651DD7BAA20085E98F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40D8F35B2084729FA6796C57 /* Pods-SoylentTrackerTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = UD49P337VQ;
+				INFOPLIST_FILE = SoylentTrackerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lthoang.wpi.com.SoylentTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SoylentTracker.app/SoylentTracker";
+			};
+			name = Debug;
+		};
+		BDAA8A661DD7BAA20085E98F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D33A65B499CD14CB900E9912 /* Pods-SoylentTrackerTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = UD49P337VQ;
+				INFOPLIST_FILE = SoylentTrackerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lthoang.wpi.com.SoylentTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SoylentTracker.app/SoylentTracker";
+			};
+			name = Release;
+		};
+		BDAA8A681DD7BAA20085E98F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FEC9EB2849D76BC70443978D /* Pods-SoylentTrackerUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = UD49P337VQ;
+				INFOPLIST_FILE = SoylentTrackerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lthoang.wpi.com.SoylentTrackerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = SoylentTracker;
+			};
+			name = Debug;
+		};
+		BDAA8A691DD7BAA20085E98F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FDDBDF9D5DA21436163E88E /* Pods-SoylentTrackerUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = UD49P337VQ;
+				INFOPLIST_FILE = SoylentTrackerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lthoang.wpi.com.SoylentTrackerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = SoylentTracker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BDAA8A341DD7BAA20085E98F /* Build configuration list for PBXProject "SoylentTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDAA8A5F1DD7BAA20085E98F /* Debug */,
+				BDAA8A601DD7BAA20085E98F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDAA8A611DD7BAA20085E98F /* Build configuration list for PBXNativeTarget "SoylentTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDAA8A621DD7BAA20085E98F /* Debug */,
+				BDAA8A631DD7BAA20085E98F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDAA8A641DD7BAA20085E98F /* Build configuration list for PBXNativeTarget "SoylentTrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDAA8A651DD7BAA20085E98F /* Debug */,
+				BDAA8A661DD7BAA20085E98F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDAA8A671DD7BAA20085E98F /* Build configuration list for PBXNativeTarget "SoylentTrackerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDAA8A681DD7BAA20085E98F /* Debug */,
+				BDAA8A691DD7BAA20085E98F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BDAA8A311DD7BAA20085E98F /* Project object */;
+}

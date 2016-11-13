@@ -1,0 +1,6 @@
+framework module Pods_SoylentTracker {
+  umbrella header "Pods-SoylentTracker-umbrella.h"
+
+  export *
+  module * { export * }
+}
