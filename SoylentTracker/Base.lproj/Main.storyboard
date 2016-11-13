@@ -14,7 +14,7 @@
         <!--Item 2-->
         <scene sceneID="PzD-zw-ywB">
             <objects>
-                <viewController id="fzg-iV-dQm" sceneMemberID="viewController">
+                <viewController id="fzg-iV-dQm" customClass="MonthlyViewController" customModule="SoylentTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xqY-5d-MII"/>
                         <viewControllerLayoutGuide type="bottom" id="Gn2-gh-2gJ"/>
@@ -22,13 +22,28 @@
                     <view key="view" contentMode="scaleToFill" id="YWI-ng-aL0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vg9-2d-OVF" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="67" y="82" width="240" height="284"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Vg9-2d-OVF" firstAttribute="leading" secondItem="YWI-ng-aL0" secondAttribute="leadingMargin" constant="51" id="9nD-eH-pbl"/>
+                            <constraint firstItem="Gn2-gh-2gJ" firstAttribute="top" secondItem="Vg9-2d-OVF" secondAttribute="bottom" constant="252" id="Jg8-Ts-UDe"/>
+                            <constraint firstItem="Vg9-2d-OVF" firstAttribute="centerX" secondItem="YWI-ng-aL0" secondAttribute="centerX" id="g2o-j7-nED"/>
+                            <constraint firstItem="Vg9-2d-OVF" firstAttribute="top" secondItem="xqY-5d-MII" secondAttribute="bottom" constant="62" id="lQ7-xZ-eVW"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="Ex8-AN-R38"/>
+                    <connections>
+                        <outlet property="chart" destination="Vg9-2d-OVF" id="Ugx-yR-5Sp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aAz-FZ-XNZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="590" y="581"/>
+            <point key="canvasLocation" x="589.60000000000002" y="580.65967016491754"/>
         </scene>
         <!--Daily View Controller-->
         <scene sceneID="w3N-5U-Aqg">

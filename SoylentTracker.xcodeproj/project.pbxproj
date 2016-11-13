@@ -11,6 +11,7 @@
 		9A6E74FFB523978A42AAB3BC /* Pods_SoylentTrackerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F573A735F8C4B181A5A027C8 /* Pods_SoylentTrackerTests.framework */; };
 		B88BCFF514DADE313D59F11D /* Pods_SoylentTrackerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26CEF13047E241897BB203AB /* Pods_SoylentTrackerUITests.framework */; };
 		BD0400331DD84A550033E23E /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD0400321DD84A550033E23E /* ExternalAccessory.framework */; };
+		BD2193D21DD8C77200FE222F /* MonthlyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2193D11DD8C77200FE222F /* MonthlyViewController.swift */; };
 		BDA5EAA81DD7DC9F002FFD16 /* soylentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA5EAA71DD7DC9F002FFD16 /* soylentData.swift */; };
 		BDA5EAAC1DD81C4F002FFD16 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA5EAAB1DD81C4F002FFD16 /* Utils.swift */; };
 		BDAA8A3D1DD7BAA20085E98F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAA8A3C1DD7BAA20085E98F /* AppDelegate.swift */; };
@@ -48,6 +49,7 @@
 		8FDDBDF9D5DA21436163E88E /* Pods-SoylentTrackerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoylentTrackerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SoylentTrackerUITests/Pods-SoylentTrackerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		BD0400321DD84A550033E23E /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
 		BD0400341DD84A550033E23E /* SoylentTracker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SoylentTracker.entitlements; sourceTree = "<group>"; };
+		BD2193D11DD8C77200FE222F /* MonthlyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonthlyViewController.swift; sourceTree = "<group>"; };
 		BDA5EAA71DD7DC9F002FFD16 /* soylentData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = soylentData.swift; sourceTree = "<group>"; };
 		BDA5EAAB1DD81C4F002FFD16 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		BDAA8A391DD7BAA20085E98F /* SoylentTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoylentTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -158,6 +160,7 @@
 				BDAA8A6A1DD7BBA00085E98F /* CounterView.swift */,
 				BDA5EAA71DD7DC9F002FFD16 /* soylentData.swift */,
 				BDA5EAAB1DD81C4F002FFD16 /* Utils.swift */,
+				BD2193D11DD8C77200FE222F /* MonthlyViewController.swift */,
 			);
 			path = SoylentTracker;
 			sourceTree = "<group>";
@@ -469,6 +472,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD2193D21DD8C77200FE222F /* MonthlyViewController.swift in Sources */,
 				BDA5EAAC1DD81C4F002FFD16 /* Utils.swift in Sources */,
 				BDA5EAA81DD7DC9F002FFD16 /* soylentData.swift in Sources */,
 				BDAA8A3F1DD7BAA20085E98F /* DailyViewController.swift in Sources */,
@@ -627,6 +631,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7CEC1AA0B07E10BFC53B4C0C /* Pods-SoylentTracker.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = SoylentTracker/SoylentTracker.entitlements;
 				DEVELOPMENT_TEAM = UD49P337VQ;
@@ -644,6 +649,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D9141E53E0498AF7265708E7 /* Pods-SoylentTracker.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = SoylentTracker/SoylentTracker.entitlements;
 				DEVELOPMENT_TEAM = UD49P337VQ;

@@ -1,12 +1,28 @@
 PODS:
+  - Charts (3.0.0):
+    - Charts/Core (= 3.0.0)
+  - Charts/Core (3.0.0)
+  - Charts/Realm (3.0.0):
+    - Charts/Core
+    - RealmSwift (~> 1.1)
   - PebbleKit (3.1.1)
+  - Realm (1.1.0):
+    - Realm/Headers (= 1.1.0)
+  - Realm/Headers (1.1.0)
+  - RealmSwift (1.1.0):
+    - Realm (= 1.1.0)
 
 DEPENDENCIES:
+  - Charts
+  - Charts/Realm
   - PebbleKit
 
 SPEC CHECKSUMS:
+  Charts: beb341928d2135613b4325a6c6aff9f2f6de895e
   PebbleKit: 390181163256815738e467f183e7c65e16b56d25
+  Realm: ceecf1a4540c4ce9efe196fe73fa9855bce05bd8
+  RealmSwift: 838058b2db95b12cb86bd0cf209df642c33fb60a
 
-PODFILE CHECKSUM: 7d9946a3e4ca99502b483f478460a15bf6c4408d
+PODFILE CHECKSUM: 40eab8718361878bc8d0863641ed40e1b88aff16
 
 COCOAPODS: 1.1.1

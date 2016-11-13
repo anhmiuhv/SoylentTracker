@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "0810"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5DB5E8489E579E44BCBE8F7774E978D0"
+               BlueprintIdentifier = "260D2949C370C9FD5990422CE2EF66A9"
                BuildableName = "Pods_SoylentTracker.framework"
                BlueprintName = "Pods-SoylentTracker"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5DB5E8489E579E44BCBE8F7774E978D0"
+            BlueprintIdentifier = "260D2949C370C9FD5990422CE2EF66A9"
             BuildableName = "Pods_SoylentTracker.framework"
             BlueprintName = "Pods-SoylentTracker"
             ReferencedContainer = "container:Pods.xcodeproj">

@@ -15,4 +15,7 @@ struct Util {
         let date = calendar.dateComponents([.day, .month, .year], from: day).description
         return date
     }
+    static func loadData() -> SoylentData? {
+        return NSKeyedUnarchiver.unarchiveObject(withFile: SoylentData.ArchiveURL.path) as? SoylentData
+    }
 }

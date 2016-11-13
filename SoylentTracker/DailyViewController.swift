@@ -8,7 +8,7 @@
 
 import UIKit
 import PebbleKit
-class DailyViewController: UIViewController, PBPebbleCentralDelegate {
+class DailyViewController: UIViewController, PBPebbleCentralDelegate, UITabBarControllerDelegate {
 
     
     @IBOutlet weak var CaffeinCounter: UILabel!
@@ -63,7 +63,7 @@ class DailyViewController: UIViewController, PBPebbleCentralDelegate {
         super.viewDidLoad()
         date = Util.string(from: Date())
         // Do any additional setup after loading the view, typically from a nib.
-        self.data = loadData()
+        self.data = Util.loadData()
         if (self.data != nil) {
             let current = self.data!.data[date] != nil ? self.data!.data[date]! : 0
             counter.counter = current
@@ -81,6 +81,10 @@ class DailyViewController: UIViewController, PBPebbleCentralDelegate {
         let central = PBPebbleCentral.default()
         central.delegate = self
 
+    }
+
+    func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
+        saveData()
     }
 
     @IBAction func connectToPebble(_ sender: UIButton) {
@@ -108,7 +112,7 @@ class DailyViewController: UIViewController, PBPebbleCentralDelegate {
         }
     }
 
-    override func viewDidDisappear(_ animated: Bool) {
+    override func viewWillDisappear(_ animated: Bool) {
         saveData()
     }
 
@@ -145,9 +149,6 @@ class DailyViewController: UIViewController, PBPebbleCentralDelegate {
         }
     }
 
-    func loadData() -> SoylentData? {
-        return NSKeyedUnarchiver.unarchiveObject(withFile: SoylentData.ArchiveURL.path) as? SoylentData
-    }
 
     func pebbleCentral(_ central: PBPebbleCentral, watchDidConnect watch: PBWatch, isNew: Bool) {
         self.connectedWatch = watch
